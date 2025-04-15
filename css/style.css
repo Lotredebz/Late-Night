@@ -1,0 +1,368 @@
+/* partie globale */
+
+@font-face {
+    font-family: "Jersey10";
+    src: url(../assets/font/Jersey_10/Jersey10-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../assets/font/Roboto_Condensed/static/RobotoCondensed-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Jersey10";
+}
+
+h1{
+    font-size: 100px;
+}
+
+h3{
+    font-size: 48PX;
+}
+
+p{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+/* partie header */
+
+header{
+    display: flex;
+    padding: 1.25rem 16.25rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    align-self: stretch;
+}
+
+.logo{
+    display: flex;
+    width: 16.5rem;
+    align-items: center;
+}
+.style__btn__1{
+    width: 16.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.style__btn__2{
+    width: 16.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.style__btn__2:hover{
+    cursor: pointer;
+}
+
+.btn__1{
+    font-size: 36px;
+    font-family: "Jersey10";
+    text-decoration-line: underline;
+    color: #656363;
+    text-transform: capitalize;
+    background-color: #000000;
+    border: none;
+}
+
+.btn__2 {
+    font-size: 48px;
+    font-family: "Jersey10";
+    color: #000000;
+    text-transform: capitalize;
+    border: none;
+    background-color:unset;
+    text-decoration: none;
+}
+
+
+
+/* partie main */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.banner__top{
+    max-width: 100%;
+}
+
+.banner__bot{
+    max-width: 100%;
+} 
+
+.hero__graphique{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+}
+
+.arbre__violet{
+    flex: 1 0 0;
+    align-self: stretch;
+    aspect-ratio: 0.15;
+    max-width: 100%;
+}
+
+.arbre__orange{
+    flex: 1 0 0;
+    align-self: stretch;
+    aspect-ratio: 0.15;
+    max-width: 100%;
+}
+
+.contenu{
+    display: flex;
+    max-width: 74%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* partie hero */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    margin: 0 10rem;
+    padding-bottom: 3rem;
+    border-bottom: #FFFFFF solid 0.5rem;
+}
+
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.hero__left h3{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1.25rem ;
+}
+
+.hero__left p {
+    text-align: center;
+}
+
+.hero__content img{
+    display: flex;
+    width: 16.5rem;
+    height: 16.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.hero h1{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* partie vidéo */
+
+.vidéo{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidéo h2{
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.vidéo__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16.5rem;
+}
+
+.vidéo__content h3{
+    font-size: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.vidéo__content a img{
+    max-width: 52rem;
+    margin-bottom: 1.5rem;
+}
+
+.vidéo__content p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* partie s'abonner */
+
+.sabonner{
+    display: flex;
+    justify-content: center;
+    border-bottom: #FFFFFF solid 0.5rem;
+    border-top: #FFFFFF solid 0.5rem;
+    margin: 0 10rem;
+    max-width: 74%;
+}
+
+.sabonner a{
+    display: flex;
+    width: 58rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000000;
+    margin: 1.5rem 4.5rem;
+    border-radius: 1rem;
+}
+
+/* partie event */
+
+.event{
+    margin: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.event__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.event__title{
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+.event__left p{
+    margin-bottom: 1.5rem;
+}
+
+.event__btn{
+    background-color: #fff;
+    text-transform: capitalize;
+    padding:  0 1.5rem;
+    border-radius: 1rem;
+    color: #000000;
+}
+
+/* partie footer */
+
+footer{
+    padding-top: 1.5 rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: #212121;
+}
+
+.footer__content{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 19rem;
+    align-self: stretch;
+}
+
+.footer__right{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 50%;
+}
+
+.footer__lright, .footer__rright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn__3,.btn__4{
+    display: flex;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 1rem;
+    font-family: "jersey10";
+    font-size: 36px;
+}
+
+.btn__4{
+    color: #656363;
+}
+
+.footer__left{
+    display: flex;
+    width: 33rem;
+    height: 7.625rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    color: #000000; 
+    border-radius: 1rem;
+}
+
+.footer__left h6{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    font-size: 36px;
+    text-transform: capitalize;
+}
