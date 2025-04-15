@@ -99,7 +99,81 @@ header{
     text-decoration: none;
 }
 
+/* partie footer */
 
+footer{
+    padding-top: 1.5 rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: #212121;
+}
+
+.footer__content{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 19rem;
+    align-self: stretch;
+}
+
+.footer__right{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 50%;
+}
+
+.footer__lright, .footer__rright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn__3,.btn__4{
+    display: flex;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 1rem;
+    font-family: "jersey10";
+    font-size: 36px;
+}
+
+.btn__4{
+    color: #656363;
+}
+
+.footer__left{
+    display: flex;
+    width: 33rem;
+    height: 7.625rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    color: #000000; 
+    border-radius: 1rem;
+}
+
+.footer__left h6{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+/* PAGE INDEX */
 
 /* partie main */
 
@@ -293,76 +367,72 @@ header{
     color: #000000;
 }
 
-/* partie footer */
+/* FIN PAGE INDEX */
 
-footer{
-    padding-top: 1.5 rem;
+/* PAGE COMMU */
+
+/* parite main */
+
+.community__contenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-self: stretch;
-    background-color: #212121;
 }
 
-.footer__content{
-    padding: 3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 19rem;
-    align-self: stretch;
-}
-
-.footer__right{
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 50%;
-}
-
-.footer__lright, .footer__rright{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-}
-
-.btn__3,.btn__4{
-    display: flex;
-    width: 15rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    color: #000000;
-    border-radius: 1rem;
-    font-family: "jersey10";
-    font-size: 36px;
-}
-
-.btn__4{
-    color: #656363;
-}
-
-.footer__left{
-    display: flex;
-    width: 33rem;
-    height: 7.625rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    color: #000000; 
-    border-radius: 1rem;
-}
-
-.footer__left h6{
-    margin-left: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 0 0;
-    align-self: stretch;
-    font-size: 36px;
+.community__contenu h1{
+    margin: 3rem 0;
     text-transform: capitalize;
+}
+
+.img__commu__ds,
+.img__commu__yt,
+.img__commu__tw{
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 7;
+    margin: 0 16rem;
+}
+
+.commu__ytb,
+.commu__twitch{
+    display: none;
+}
+
+.img__commu__ds a img{
+    max-width: 100%;
+    position: relative;
+    transform: translateY(-30%);
+    margin-bottom: 1.5rem;
+}
+
+.commu__discord{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discord__div{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 6.5fr 35fr 6.5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.discord__card{
+    display: flex;
+}
+
+.discord__img{
+    aspect-ratio: 1.1;
+    overflow: hidden;
+    position: relative;
+}
+
+.discord__img img {
+    max-width: 100%;
+    position: relative;
 }
