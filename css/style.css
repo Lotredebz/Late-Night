@@ -420,10 +420,14 @@ footer{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin-bottom: 1.5rem;
 }
 
 .discord__card{
     display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .discord__img{
@@ -435,4 +439,96 @@ footer{
 .discord__img img {
     max-width: 100%;
     position: relative;
+}
+
+.discord__contenu{
+    margin-top: 1.5rem;
+    display: flex;
+    max-width: 50rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discord__contenu h3{
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.discord__contenu p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn__5 h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 6.25rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+    color: #000000;
+}
+
+.btn__5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.community__réseaux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.community__réseaux h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize; 
+}
+
+.little__svg{
+    width: 3rem;
+}
+
+.svg__link {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    padding: .5rem;
+}
+
+.commu__réseaux__contenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30rem;
+    grid-row-gap: 0px;
+    }
+
+.réseaux__mos h3,
+.réseaux__tho h3 {
+    background-color: #fff;
+    color: #000000;
+    padding: 0 4.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.réseaux__mos,
+.réseaux__tho {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
