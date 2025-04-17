@@ -102,13 +102,15 @@ header{
 /* partie footer */
 
 footer{
-    padding-top: 1.5 rem;
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background-color: #212121;
+    background-color:#000000;
+    border-top: #FFFFFF solid .5rem;
+    margin: 0 10rem;
 }
 
 .footer__content{
@@ -385,35 +387,30 @@ footer{
     text-transform: capitalize;
 }
 
-.img__commu__ds,
-.img__commu__yt,
-.img__commu__tw{
+.img__commu{
     overflow: hidden;
     position: relative;
     aspect-ratio: 7;
-    margin: 0 16rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.commu__ytb,
-.commu__twitch{
-    display: none;
+.img__commu img {
+    width: 73%;
+    height: auto;
+    object-fit: cover;
 }
 
-.img__commu__ds a img{
-    max-width: 100%;
-    position: relative;
-    transform: translateY(-30%);
-    margin-bottom: 1.5rem;
-}
-
-.commu__discord{
+.commu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.discord__div{
+.commu__div{
     margin-top: 1.5rem;
     display: grid;
     grid-template-columns: 6.5fr 35fr 6.5fr;
@@ -423,25 +420,26 @@ footer{
     margin-bottom: 1.5rem;
 }
 
-.discord__card{
+.commu__card{
     display: flex;
     gap: 1.25rem;
     justify-content: center;
     align-items: flex-start;
 }
 
-.discord__img{
+.commu__img{
+    max-width: 50rem;
     aspect-ratio: 1.1;
     overflow: hidden;
     position: relative;
 }
 
-.discord__img img {
+.commu__img img {
     max-width: 100%;
     position: relative;
 }
 
-.discord__contenu{
+.commu__contenu{
     margin-top: 1.5rem;
     display: flex;
     max-width: 50rem;
@@ -449,13 +447,13 @@ footer{
     align-items: center;
 }
 
-.discord__contenu h3{
+.commu__contenu h3{
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.discord__contenu p{
+.commu__contenu p{
     text-align: center;
     font-size: 18px;
     line-height: 30px;
@@ -479,6 +477,26 @@ footer{
     background-color: #fff;
     border-radius: 1rem;
 }
+
+.than{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.than svg {
+    max-width: 2.5rem;
+    fill: #ffffff;
+}
+
+/* Éphémères */
+
+.twitch,
+.youtube {
+     display: none;
+}
+
+/* partie réseaux */
 
 .community__réseaux{
     display: flex;
