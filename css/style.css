@@ -55,9 +55,14 @@ header{
     align-self: stretch;
 }
 
+.burger{
+    display: none;
+}
+
 .logo{
     display: flex;
-    width: 16.5rem;
+    aspect-ratio: 3.3;
+    max-width: 264px;
     align-items: center;
 }
 .style__btn__1{
@@ -368,6 +373,136 @@ footer{
     border-radius: 1rem;
     color: #000000;
 }
+
+/* partie responsive */
+
+@media screen and (max-width:768px){
+    .burger{
+        display:block;
+        color: #FFFFFF;
+    }
+    .style__btn__1,
+    .style__btn__2{
+        display: none;
+    }
+    .arbre__orange,
+    .arbre__violet,
+    .banner__bot,
+    .hero__content img{
+        display: none;
+    }
+
+    .banner__top__top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    /* partie hero */
+
+    .hero h1{
+        padding: 3rem 1rem 0;
+    }
+
+    .hero__left p{
+        font-size: 14px;
+    }
+
+    .banner__top{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 200%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 1.5rem 3rem 0 3rem;
+        gap: 0;
+    }
+
+    .hero__content{
+        margin: 0;
+    }
+
+    .hero__content h3{
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .hero__graphique{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    /* partie vidéo */
+
+    .vidéo h2{
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .vidéo__content{
+        padding: 0;
+    }
+
+    .vidéo__content h3{
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .vidéo__content a img{
+        max-width: 28rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .vidéo__content p{
+        font-size: 14px;
+    }
+
+    /* partie s'abonner */
+
+    .sabonner{
+        display: flex;
+        justify-content: center;
+        border-bottom: #FFFFFF solid 0.5rem;
+        border-top: #FFFFFF solid 0.5rem;
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .sabonner a{
+        display: flex;
+        width: 15rem;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #000000;
+        border-radius: 1rem;
+        margin: 0;
+    }
+
+    /* Éphémère */
+
+    .event,
+    footer{
+        display: none;
+    }
+
+}
+
 
 /* FIN PAGE INDEX */
 
