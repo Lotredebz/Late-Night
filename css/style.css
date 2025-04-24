@@ -27,7 +27,7 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,span{
     font-family: "Jersey10";
 }
 
@@ -55,9 +55,14 @@ header{
     align-self: stretch;
 }
 
+.burger{
+    display: none;
+}
+
 .logo{
     display: flex;
-    width: 16.5rem;
+    aspect-ratio: 3.3;
+    max-width: 264px;
     align-items: center;
 }
 .style__btn__1{
@@ -65,6 +70,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 36px;
+    font-family: "Jersey10";
+    text-decoration-line: underline;
+    color: #656363;
+    text-transform: capitalize;
+    background-color: #000000;
 }
 .style__btn__2{
     width: 16.5rem;
@@ -73,6 +84,12 @@ header{
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 1rem;
+    font-size: 48px;
+    font-family: "Jersey10";
+    color: #000000;
+    text-transform: capitalize;
+    border: none;
+    text-decoration: none;
 }
 
 .style__btn__2:hover{
@@ -99,7 +116,80 @@ header{
     text-decoration: none;
 }
 
+/* partie footer */
 
+footer{
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000;
+    border-top: #FFFFFF solid .5rem;
+    margin: 0 10rem;
+}
+
+.footer__content{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.footer__right{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 50%;
+}
+
+.footer__lright, .footer__rright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn__3,.btn__4{
+    display: flex;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 1rem;
+    font-family: "jersey10";
+    font-size: 36px;
+}
+
+.btn__4{
+    color: #656363;
+}
+
+.footer__left{
+    display: flex;
+    width: 33rem;
+    height: 7.625rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    color: #000000; 
+    border-radius: 1rem;
+}
+
+.footer__left span{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+/* PAGE INDEX */
 
 /* partie main */
 
@@ -243,22 +333,29 @@ header{
     justify-content: center;
     border-bottom: #FFFFFF solid 0.5rem;
     border-top: #FFFFFF solid 0.5rem;
-    margin: 0 10rem;
-    max-width: 74%;
+    width: 74%;
+    padding: 2rem 0;
+    margin: 0;
 }
 
 .sabonner a{
     display: flex;
-    width: 58rem;
+    font-family: "Jersey10";
+    font-size: 3rem;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     color: #000000;
-    margin: 1.5rem 4.5rem;
     border-radius: 1rem;
+    padding: 0 1.5rem;
+    margin: 0;
 }
 
 /* partie event */
+
+.capphone{
+    display: none;
+}
 
 .event{
     margin: 3rem 10rem;
@@ -291,78 +388,375 @@ header{
     padding:  0 1.5rem;
     border-radius: 1rem;
     color: #000000;
+    font-family: 'Jersey10';
+    font-size: 3rem;
 }
 
-/* partie footer */
+/* FIN PAGE INDEX */
 
-footer{
-    padding-top: 1.5 rem;
+/* PAGE COMMU */
+
+/* parite main */
+
+.community__contenu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-self: stretch;
-    background-color: #212121;
 }
 
-.footer__content{
-    padding: 3rem 0;
+.community__contenu h1{
+    margin: 3rem 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.img__commu{
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 7;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 19rem;
-    align-self: stretch;
+    align-items: center;
 }
 
-.footer__right{
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 50%;
+.img__commu img {
+    width: 73%;
+    height: auto;
+    object-fit: cover;
 }
 
-.footer__lright, .footer__rright{
+.commu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
 }
 
-.btn__3,.btn__4{
+.commu__div{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 6.5fr 35fr 6.5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 1.5rem;
+}
+
+.commu__card{
     display: flex;
-    width: 15rem;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.commu__img{
+    max-width: 50rem;
+    aspect-ratio: 1.1;
+    overflow: hidden;
+    position: relative;
+}
+
+.commu__img img {
+    max-width: 100%;
+    position: relative;
+}
+
+.commu__contenu{
+    margin-top: 1.5rem;
+    display: flex;
+    max-width: 50rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commu__contenu h3{
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.commu__contenu p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn__5{
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    color: #000000;
     border-radius: 1rem;
-    font-family: "jersey10";
-    font-size: 36px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 6.25rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+    color: #000000;
+    font-family: 'Jersey10';
 }
 
-.btn__4{
-    color: #656363;
-}
-
-.footer__left{
+.than{
     display: flex;
-    width: 33rem;
-    height: 7.625rem;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    color: #000000; 
-    border-radius: 1rem;
 }
 
-.footer__left h6{
-    margin-left: 4rem;
+.than svg {
+    max-width: 2.5rem;
+    fill: #ffffff;
+}
+
+/* Éphémères */
+
+.twitch,
+.youtube {
+     display: none;
+}
+
+/* partie réseaux */
+
+.community__réseaux{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 0 0;
-    align-self: stretch;
-    font-size: 36px;
-    text-transform: capitalize;
+    align-items: center;
+}
+
+.community__réseaux h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize; 
+}
+
+.little__svg{
+    width: 3rem;
+}
+
+.svg__link {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    padding: .5rem;
+}
+
+.commu__réseaux__contenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30rem;
+    grid-row-gap: 0px;
+    }
+
+.réseaux__mos h3,
+.réseaux__tho h3 {
+    background-color: #fff;
+    color: #000000;
+    padding: 0 4.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.réseaux__mos,
+.réseaux__tho {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+    .burger{
+        display:block;
+        color: #FFFFFF;
+    }
+    .style__btn__1,
+    .style__btn__2{
+        display: none;
+    }
+    .arbre__orange,
+    .arbre__violet,
+    .banner__bot,
+    .hero__content img{
+        display: none;
+    }
+
+    .banner__top__top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    /* partie hero */
+
+    .hero h1{
+        padding: 3rem 1rem 0;
+    }
+
+    .hero__left p{
+        font-size: 14px;
+    }
+
+    .banner__top{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 200%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 1.5rem 3rem 0 3rem;
+        gap: 0;
+    }
+
+    .hero__content{
+        margin: 0;
+    }
+
+    .hero__content h3{
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .hero__graphique{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    /* partie vidéo */
+
+    .vidéo h2{
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .vidéo__content{
+        padding: 0;
+    }
+
+    .vidéo__content h3{
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+    .vidéo__content a{
+        max-width: 30rem;
+    }
+    
+    .vidéo__content a img{
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .vidéo__content p{
+        font-size: 14px;
+    }
+
+    /* partie s'abonner */
+
+    .sabonner{
+        width: 100%;
+    }
+
+    /* partie event */
+
+    .capphone{
+        display: flex;
+    }
+
+    .capdesk{
+        display: none;
+    }
+
+    .event{
+        margin: 0 0 3rem;
+    }
+
+    .event__title{
+        margin-top: 24px ;
+        font-size: 36px;
+    }
+    
+    .event p{
+        font-size: 14px;
+    }
+
+    /* partie footer */
+
+    footer{
+        margin: 0;
+        width: 74%;
+    }
+    
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer__left span,.btn__3,.btn__4{
+        font-size: 18px;
+    }
+
+    .footer__left{
+        width: 23rem;
+    }
+
+    .btn__3,.btn__4{
+        width: 10rem;
+    }
+    
+    /* PAGE COMMU */
+    .twitch,.youtube{
+        display: flex;
+    }
+
+    .commu__div{
+        display: flex;
+    }
+
+    .than {
+        display: none;
+    }
+
+    .btn__5{
+        max-width: 100%;
+        font-size: 36px;
+    }
+
+    .community__contenu h1{
+        text-align: center;
+    }
+
+    .commu__img{
+        display: none;
+
+    }
+
+    .community__réseaux{
+        
+    }
+    .commu__réseaux__contenu{
+        gap: 4rem;
+    }
 }
