@@ -735,6 +735,10 @@ footer{
         display: flex;
     }
 
+    .img__commu img{
+        width: 90%;
+    }
+
     .than {
         display: none;
     }
@@ -753,10 +757,27 @@ footer{
 
     }
 
-    .community__réseaux{
-        
+    .commu__contenu h3{
+        font-size: 36px;
     }
+
+    .réseaux__mos h3,
+    .réseaux__tho h3{
+        padding: 0 2.5rem;
+    }
+
+    .commu__contenu p{
+        font-size: 14px;
+    }
+
+    .community__réseaux h2{
+        margin: 1.5rem;
+        font-size: 36px;
+        text-align: center;
+    }
+
     .commu__réseaux__contenu{
-        gap: 4rem;
+        margin: 0 1.5rem;
+        gap: 1.5rem;
     }
 }
