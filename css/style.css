@@ -26,6 +26,9 @@ body{
 a{
     text-decoration: none;
 }
+a:hover{
+    background-color: rgba(255, 133, 0, 1);
+}
 
 h1,h2,h3,h4,h5,h6,span{
     font-family: "Jersey10";
@@ -42,6 +45,7 @@ h3{
 p{
     font-family: "Roboto";
     font-size: 18px;
+    line-height: 1.5;
 }
 
 /* partie header */
@@ -479,8 +483,6 @@ footer{
 
 .commu__contenu p{
     text-align: center;
-    font-size: 18px;
-    line-height: 30px;
     padding: 0 3rem;
     margin-bottom: 3rem;
 }
@@ -575,6 +577,28 @@ footer{
 
 /* RESPONSIVE */
 
+@media screen and (max-width:1360px) {
+    .arbre__orange,
+    .arbre__violet{
+        display: none;
+    }
+    .hero__graphique{
+        justify-content: center;
+    }
+    footer {
+        margin: 0;
+    }
+    .footer__content{
+        flex-direction: column;
+    }
+    .vidéo__content{
+        padding: 0;
+    }
+    .commu__réseaux__contenu{
+        gap: 10rem
+    }
+}
+
 @media screen and (max-width:768px){
     .burger{
         display:block;
@@ -602,10 +626,6 @@ footer{
 
     .hero h1{
         padding: 3rem 1rem 0;
-    }
-
-    .hero__left p{
-        font-size: 14px;
     }
 
     .banner__top{
@@ -669,10 +689,6 @@ footer{
         margin-bottom: 1.5rem;
     }
 
-    .vidéo__content p{
-        font-size: 14px;
-    }
-
     /* partie s'abonner */
 
     .sabonner{
@@ -697,10 +713,6 @@ footer{
         margin-top: 24px ;
         font-size: 36px;
     }
-    
-    .event p{
-        font-size: 14px;
-    }
 
     /* partie footer */
 
@@ -715,7 +727,7 @@ footer{
     }
     
     .footer__left span,.btn__3,.btn__4{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .footer__left{
@@ -764,10 +776,6 @@ footer{
     .réseaux__mos h3,
     .réseaux__tho h3{
         padding: 0 2.5rem;
-    }
-
-    .commu__contenu p{
-        font-size: 14px;
     }
 
     .community__réseaux h2{
