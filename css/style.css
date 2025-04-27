@@ -26,8 +26,13 @@ body{
 a{
     text-decoration: none;
 }
-a:hover{
+
+.hov:hover,a:hover{
     background-color: rgba(255, 133, 0, 1);
+}
+
+.nohov:hover{
+    background-color: #000000;
 }
 
 h1,h2,h3,h4,h5,h6,span{
@@ -52,7 +57,7 @@ p{
 
 header{
     display: flex;
-    padding: 1.25rem 16.25rem;
+    padding: 1.25rem 16rem;
     align-items: center;
     justify-content: center;
     gap: 1.25rem;
@@ -60,13 +65,39 @@ header{
 }
 
 .burger{
+    background: none;
+    border: none;
     display: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.bar::before, .bar::after{
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 12px;
+}
+
+.bar::after{
+    top: 12px;
 }
 
 .logo{
     display: flex;
-    aspect-ratio: 3.3;
-    max-width: 264px;
+    max-width: 15rem;
     align-items: center;
 }
 .style__btn__1{
@@ -577,9 +608,12 @@ footer{
 
 /* RESPONSIVE */
 
-@media screen and (max-width:1360px) {
+
+
+@media screen and (max-width:1860px) {
     .arbre__orange,
-    .arbre__violet{
+    .arbre__violet,
+    .hero__content img{
         display: none;
     }
     .hero__graphique{
@@ -599,7 +633,8 @@ footer{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
+
     .burger{
         display:block;
         color: #FFFFFF;
@@ -639,7 +674,7 @@ footer{
         display: flex;
         justify-content: space-between;
         margin: 0;
-        padding: 1.5rem 3rem 0 3rem;
+        padding: 1.5rem 1.5rem 0 1.5rem;
         gap: 0;
     }
 
