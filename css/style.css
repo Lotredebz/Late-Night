@@ -57,7 +57,7 @@ p{
 
 header{
     display: flex;
-    padding: 1.25rem 16rem;
+    padding: 1.25rem;
     align-items: center;
     justify-content: center;
     gap: 1.25rem;
@@ -100,18 +100,6 @@ header{
     max-width: 15rem;
     align-items: center;
 }
-.style__btn__1{
-    width: 16.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    font-family: "Jersey10";
-    text-decoration-line: underline;
-    color: #656363;
-    text-transform: capitalize;
-    background-color: #000000;
-}
 .style__btn__2{
     width: 16.5rem;
     display: flex;
@@ -129,16 +117,6 @@ header{
 
 .style__btn__2:hover{
     cursor: pointer;
-}
-
-.btn__1{
-    font-size: 36px;
-    font-family: "Jersey10";
-    text-decoration-line: underline;
-    color: #656363;
-    text-transform: capitalize;
-    background-color: #000000;
-    border: none;
 }
 
 .btn__2 {
