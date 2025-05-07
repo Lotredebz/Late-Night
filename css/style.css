@@ -300,9 +300,9 @@ footer{
     text-align: center;
 }
 
-/* partie vidéo */
+/* partie video */
 
-.vidéo{
+.video{
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -310,31 +310,32 @@ footer{
     justify-content: center;
 }
 
-.vidéo h2{
+.video h2{
     font-size: 100px;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.vidéo__content{
+.video__content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 16.5rem;
+    margin-bottom: 3rem;
 }
 
-.vidéo__content h3{
+.video__content h3{
     font-size: 48px;
     margin-bottom: 1.5rem;
 }
 
-.vidéo__content a img{
-    max-width: 52rem;
-    margin-bottom: 1.5rem;
+.leblockvid{
+    width: 54rem;
+    aspect-ratio: 1.7;
 }
 
-.vidéo__content p{
+.video__content p{
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -603,7 +604,7 @@ footer{
     .footer__content{
         flex-direction: column;
     }
-    .vidéo__content{
+    .video__content{
         padding: 0;
     }
     .commu__réseaux__contenu{
@@ -677,29 +678,29 @@ footer{
         gap: 0;
     }
 
-    /* partie vidéo */
+    /* partie video */
 
-    .vidéo h2{
+    .video h2{
         font-size: 36px;
         text-align: center;
         margin-bottom: 3rem;
     }
 
-    .vidéo__content{
+    .video__content{
         padding: 0;
     }
 
-    .vidéo__content h3{
+    .video__content h3{
         font-size: 24px;
         margin-bottom: 1.5rem;
     }
-    .vidéo__content a{
+    .video__content a{
         max-width: 30rem;
+        margin-bottom: 1.5rem;
     }
     
-    .vidéo__content a img{
+    .leblockvid{
         max-width: 100%;
-        margin-bottom: 1.5rem;
     }
 
     /* partie s'abonner */
