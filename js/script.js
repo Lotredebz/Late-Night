@@ -9,8 +9,8 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)
     const videoID = video.link.split('=')[1];
     const videoTitle = video.title;
     document.getElementById('titreVideo').textContent = videoTitle;
-    const embed = `<iframe class="leblockvid" src="https://www.youtube.com/embed/${videoID}" allowfullscreen></iframe>`;
-    document.getElementById("BlockVideo").innerHTML = embed;
+    const ajoutVid = `<iframe class="leblockvid" src="https://www.youtube.com/embed/${videoID}" allowfullscreen></iframe>`;
+    document.getElementById("BlockVideo").innerHTML = ajoutVid;
   })
   .catch(err => {
     console.error(err);
