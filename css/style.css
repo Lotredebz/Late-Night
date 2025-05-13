@@ -512,13 +512,13 @@ footer{
     font-family: 'Jersey10';
 }
 
-.than{
+.prev,.next{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.than svg {
+.prev svg,.next svg {
     max-width: 2.5rem;
     fill: #ffffff;
 }

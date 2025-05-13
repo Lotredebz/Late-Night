@@ -17,3 +17,33 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)
     document.getElementById('titreVideo').textContent = 'Impossible de charger le titre';
     document.getElementById("BlockVideo").innerHTML = '<p>Impossible de charger la video.</p>';
   });
+
+function carouselle (){
+  const commuDivs = document.querySelectorAll('.commu');
+  const nextBouttons = document.querySelectorAll('.next');
+  const prevBouttons = document.querySelectorAll('.prev');
+  let positionActu = 0;
+
+  function montreDiv(index) {
+    commuDivs.forEach(function (div, i) {
+        div.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  nextBouttons.forEach(function (boutton) {
+    boutton.addEventListener('click', function (event) {
+        event.preventDefault();
+        positionActu = (positionActu + 1) % commuDivs.length;
+        montreDiv(positionActu);
+    });
+  });
+
+  prevBouttons.forEach(function (boutton) {
+    boutton.addEventListener('click', function (event) {
+        event.preventDefault();
+        positionActu = (positionActu - 1 + commuDivs.length) % commuDivs.length;
+        montreDiv(positionActu);
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', carouselle )
