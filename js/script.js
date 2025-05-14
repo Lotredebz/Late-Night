@@ -34,23 +34,23 @@ function carouselle() {
   function montreDiv() {
     commuDivs.forEach(changeAffi);
   }
-  function handleNextClick(event) {
+  function clickSuivant(event) {
     event.preventDefault();
     positionActu = (positionActu + 1) % commuDivs.length;
     montreDiv(positionActu);
   }
-  function handlePrevClick(event) {
+  function clickPrecedent(event) {
     event.preventDefault();
     positionActu = (positionActu - 1 + commuDivs.length) % commuDivs.length;
     montreDiv(positionActu);
   }
 
   nextBouttons.forEach(function (boutton) {
-    boutton.addEventListener('click', handleNextClick);
+    boutton.addEventListener('click', clickSuivant);
   });
 
   prevBouttons.forEach(function (boutton) {
-    boutton.addEventListener('click', handlePrevClick);
+    boutton.addEventListener('click', clickPrecedent);
   });
 }
 
