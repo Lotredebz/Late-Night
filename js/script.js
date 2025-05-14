@@ -18,32 +18,40 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)
     document.getElementById("BlockVideo").innerHTML = '<p>Impossible de charger la video.</p>';
   });
 
-function carouselle (){
+function carouselle() {
   const commuDivs = document.querySelectorAll('.commu');
   const nextBouttons = document.querySelectorAll('.next');
   const prevBouttons = document.querySelectorAll('.prev');
   let positionActu = 0;
 
-  function montreDiv(index) {
-    commuDivs.forEach(function (div, i) {
-        div.style.display = i === index ? 'block' : 'none';
-    });
+  function changeAffi(div, i) {
+    if (i === positionActu) {
+      div.style.display = 'block';
+    } else {
+      div.style.display = 'none';
+    }
+  }
+  function montreDiv() {
+    commuDivs.forEach(changeAffi);
+  }
+  function handleNextClick(event) {
+    event.preventDefault();
+    positionActu = (positionActu + 1) % commuDivs.length;
+    montreDiv(positionActu);
+  }
+  function handlePrevClick(event) {
+    event.preventDefault();
+    positionActu = (positionActu - 1 + commuDivs.length) % commuDivs.length;
+    montreDiv(positionActu);
   }
 
   nextBouttons.forEach(function (boutton) {
-    boutton.addEventListener('click', function (event) {
-        event.preventDefault();
-        positionActu = (positionActu + 1) % commuDivs.length;
-        montreDiv(positionActu);
-    });
+    boutton.addEventListener('click', handleNextClick);
   });
 
   prevBouttons.forEach(function (boutton) {
-    boutton.addEventListener('click', function (event) {
-        event.preventDefault();
-        positionActu = (positionActu - 1 + commuDivs.length) % commuDivs.length;
-        montreDiv(positionActu);
-    });
+    boutton.addEventListener('click', handlePrevClick);
   });
 }
-document.addEventListener('DOMContentLoaded', carouselle )
+
+document.addEventListener('DOMContentLoaded', carouselle);
