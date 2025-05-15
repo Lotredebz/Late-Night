@@ -73,6 +73,10 @@ header{
     cursor: pointer;
 }
 
+.burgerdiv{
+    display: none;
+}
+
 .bar{
     display: block;
     width: 30px;
@@ -613,11 +617,41 @@ footer{
 }
 
 @media screen and (max-width:900px){
+    body{
+        z-index: 0;
+    }
 
     .burger{
         display:block;
         color: #FFFFFF;
     }
+    .burgerdiv{
+        display: block;
+        position: absolute;
+        background-color: #656363;
+        z-index: 90000000;
+        width: 0%;
+        height: auto;
+        top: 100%;
+        left: 110%;
+        overflow-y: auto;
+        opacity: 0;
+    }
+
+    .style__btn__3{
+    width: 16.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    font-size: 48px;
+    font-family: "Jersey10";
+    color: #000000;
+    text-transform: capitalize;
+    border: none;
+    text-decoration: none;
+}
     .style__btn__1,
     .style__btn__2{
         display: none;
