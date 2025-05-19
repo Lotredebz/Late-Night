@@ -23,6 +23,10 @@ body{
     align-items: center;
 }
 
+body.no__scroll {
+    overflow: hidden;
+}
+
 a{
     text-decoration: none;
 }
@@ -617,10 +621,6 @@ footer{
 }
 
 @media screen and (max-width:900px){
-    body{
-        z-index: 0;
-        overflow-x: hidden;
-    }
 
     .burger{
         z-index: 10;
@@ -635,37 +635,51 @@ footer{
         background-color: #000000;
         z-index: 9;
         width: 100%;
-        height: 100%;
-        top: 110px;
+        height: 100vh;
+        top: 100px;
         left: 110%;
         opacity: 0;
         transition: all .75s;
-        overflow-y: hidden;
-        gap: 30px;
-        padding-top: 30px;
+        overflow-y: auto;
+        gap: 60px;
+        padding-top: 80px;
     }
 
     .burgeranim .burgerdiv{
         width: 100%;
-        transform: translateX(-110%);
+        left: 0;
         transition: all 1s;
         opacity: 1;
     }
 
+    .réseaux__burger{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        margin-top: 30px;
+    }
+
     .style__btn__3{
-    width: 16.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 1rem;
-    font-size: 48px;
-    font-family: "Jersey10";
-    color: #000000;
-    text-transform: capitalize;
-    border: none;
-    text-decoration: none;
-}
+        width: 16.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        font-size: 48px;
+        font-family: "Jersey10";
+        color: #000000;
+        text-transform: capitalize;
+        border: none;
+        text-decoration: none;
+    }
+
+    .réseaux__burger .svg__link{
+        width: 2.5rem;
+    }
+
     .style__btn__1,
     .style__btn__2{
         display: none;
