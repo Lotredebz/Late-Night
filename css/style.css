@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 body.no__scroll {
@@ -591,6 +592,23 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* partie formulaire*/
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list__formulaire{
+    display: flex;
+    gap : 190px;
+}
+
+.elemlist__formulaire{
+    display: flex;
+    flex-direction: column;
 }
 
 /* RESPONSIVE */
