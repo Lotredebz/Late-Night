@@ -1,9 +1,6 @@
 
 #fullscreen-button {
-    position: absolute;
-    top:  15px;
-    right:  15px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.795);
     border:  0;
     width:  40px;
     height:  40px;
