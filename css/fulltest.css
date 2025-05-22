@@ -1,5 +1,9 @@
+.fullscreen{
+    display: none;
+}
 
-#fullscreen-button {
+@media screen and (max-width:900px) {
+   #fullscreen-button {
     background: rgba(255, 255, 255, 0.795);
     border:  0;
     width:  40px;
@@ -12,6 +16,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.test.fullscreen{
+    display: flex;
+}
 #fullscreen-button:hover {
     transform: scale(1.125);
 }
@@ -23,4 +30,5 @@
 }
 [fullscreen] #fullscreen-button svg:nth-child(2) {
     display: inline-block;
+} 
 }
