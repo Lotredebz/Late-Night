@@ -627,7 +627,7 @@ footer{
 .div__mention{
     display: flex;
     flex-direction: column;
-    padding: 6rem;
+    padding:  0 6rem 6rem 6rem;
     gap: 3rem;
 }
 
