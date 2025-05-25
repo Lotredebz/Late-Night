@@ -622,9 +622,25 @@ footer{
     flex-direction: column-reverse;
 }
 
+/* page mention */
+
+.div__mention{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    gap: 3rem;
+}
+
+.div__mention h1{
+    text-align: center;
+}
+
+.div__mention h2{
+    font-size: 48px;
+    padding-bottom: 1rem;
+}
+
 /* RESPONSIVE */
-
-
 
 @media screen and (max-width:1860px) {
     .arbre__orange,
