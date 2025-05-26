@@ -617,9 +617,64 @@ footer{
 
 /* page histoire */
 
-.test{
+.anim__global{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+  max-width: 100vh;
+  opacity: 0;
+  font-size: 2em;
+  margin-top: 30px;
+  font-family:"Jersey 10" ;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  padding: 0 3rem 3rem;
+}
+
+#message.visible {
+  opacity: 1;
+}
+
+#img1, #img2{
+    width: 35%;
+}
+
+.animation{
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+}
+
+/* page biblio */
+
+.biblio__vids{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title__biblio{
+    text-align: center;
+}
+
+.recent h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#video-list{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* page mention */
@@ -908,5 +963,24 @@ footer{
     .commu__réseaux__contenu{
         margin: 0 1.5rem;
         gap: 1.5rem;
+    }
+
+    #img1, #img2{
+    width: 15%;
+    }
+
+    #message{
+        width: 40%;
+        font-size: 1.2rem;
+    }
+
+    .recent h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 36px ;
+    text-transform: capitalize;
+    }
+    .diff{
+        padding:0 1rem ;
     }
 }
