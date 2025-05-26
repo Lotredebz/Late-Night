@@ -1,4 +1,4 @@
-// var API_KEY = "AIzaSyCwZ-g1ujpQsoYOylVjd_ODrYIfk-swU4g";
+
 // var CHANNEL_ID = "UCmy6d_VwSZe1eRlCpyMaoCQ";
 
 // function fetchVideos(order, containerId) {
