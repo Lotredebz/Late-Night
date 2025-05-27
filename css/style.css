@@ -617,6 +617,10 @@ footer{
 
 /* page histoire */
 
+.test:hover{
+    cursor: pointer;
+}
+
 .anim__global{
     display: flex;
     flex-direction: column;
@@ -629,7 +633,7 @@ footer{
   opacity: 0;
   font-size: 2em;
   margin-top: 30px;
-  font-family:"Jersey 10" ;
+  font-family:"Jersey10";
   text-align: center;
   transition: opacity 0.5s ease;
   padding: 0 3rem 3rem;
@@ -675,6 +679,19 @@ footer{
     padding: 3rem;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+
+.video-card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.iframe {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
 }
 
 /* page mention */
@@ -966,7 +983,8 @@ footer{
     }
 
     #img1, #img2{
-    width: 15%;
+        width: 15%;
+        padding: 1.5rem 0 0 0;
     }
 
     #message{
@@ -982,5 +1000,10 @@ footer{
     }
     .diff{
         padding:0 1rem ;
+    }
+
+    #video-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
