@@ -67,11 +67,11 @@ let textList = [
   "Thomas & Mos : À la prochaine !!!"
 ];
 
-var img1 = document.getElementById("img1");
-var img2 = document.getElementById("img2");
-var message = document.getElementById("message");
+let img1 = document.getElementById("img1");
+let img2 = document.getElementById("img2");
+let message = document.getElementById("message");
 
-var currentIndex = 1;
+let currentIndex = 1;
 
 img1.src = imagePairs[0][0];
 img2.src = imagePairs[0][1];
@@ -83,7 +83,7 @@ function handleClick() {
     return;
   }
 
-  var pair = imagePairs[currentIndex];
+  let pair = imagePairs[currentIndex];
   img1.src = pair[0];
   img2.src = pair[1];
 
