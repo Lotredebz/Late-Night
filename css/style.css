@@ -28,8 +28,13 @@ body{
     align-items: center;
 }
 
-body.no__scroll {
-    overflow: hidden;
+.no-scroll {
+    overflow: hidden !important;
+}
+
+body.no-scroll {
+    position: fixed;
+    width: 100vw;
 }
 
 a{
@@ -757,7 +762,7 @@ footer{
         left: 110%;
         opacity: 1;
         transition: all .5s;
-        overflow-y: auto;
+        overflow-y: hidden;
         gap: 60px;
         padding-top: 80px;
     }
